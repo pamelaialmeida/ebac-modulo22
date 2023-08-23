@@ -1,0 +1,23 @@
+{
+  "name": "ebac-modulo22",
+  "version": "1.0.0",
+  "description": "Exercicio do módulo 22",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "keywords": [],
+  "author": "Pâmela Inacio Almeida",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^9.7.0",
+    "faker": "^5.5.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}
