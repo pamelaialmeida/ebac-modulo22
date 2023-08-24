@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-24T19:10:25.625Z",
+    "end": "2023-08-24T19:10:51.642Z",
+    "duration": 26017,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d5c3ae58-1f8c-45cc-83d6-26ec03205caa",
+      "title": "",
+      "fullFile": "cypress/integration/RegistrarConta.feature",
+      "file": "cypress/integration/RegistrarConta.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ef6d8f5c-f9cf-4994-af8c-d21bc1ecb2dd",
+          "title": "Register Account",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should create a new account when all fields are filled with valid data",
+              "fullTitle": "Register Account Should create a new account when all fields are filled with valid data",
+              "timedOut": null,
+              "duration": 11190,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "aabcad10-8e62-4f1b-be34-d23fda35563c",
+              "parentUUID": "ef6d8f5c-f9cf-4994-af8c-d21bc1ecb2dd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should not create a new account when the email field is not filled",
+              "fullTitle": "Register Account Should not create a new account when the email field is not filled",
+              "timedOut": null,
+              "duration": 4837,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "fd18cbf8-bceb-40fb-97cb-00efcc6c0618",
+              "parentUUID": "ef6d8f5c-f9cf-4994-af8c-d21bc1ecb2dd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should not create a new account when providing data from an existent account",
+              "fullTitle": "Register Account Should not create a new account when providing data from an existent account",
+              "timedOut": null,
+              "duration": 9671,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "742f1854-005b-45cc-8472-d04ffce5eceb",
+              "parentUUID": "ef6d8f5c-f9cf-4994-af8c-d21bc1ecb2dd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aabcad10-8e62-4f1b-be34-d23fda35563c",
+            "fd18cbf8-bceb-40fb-97cb-00efcc6c0618",
+            "742f1854-005b-45cc-8472-d04ffce5eceb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25698,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

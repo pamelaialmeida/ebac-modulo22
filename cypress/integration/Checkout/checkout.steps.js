@@ -1,10 +1,8 @@
 /// <reference types="cypress" />
 
-import { es } from "@faker-js/faker";
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
-import { en } from "faker/lib/locales";
 const dadosUsuario = require('../../fixtures/dadosUsuario.json')
-const { homePage, loginPage, minhaContaPage, checkoutPage, orderPage } = require('../../support/pages')
+const { checkoutPage, orderPage } = require('../../support/pages')
 
 describe('Testes da funcionalidade de checkout utilizando AppActions', () => {
 

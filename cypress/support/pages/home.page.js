@@ -6,6 +6,10 @@ class HomePage {
     acessarMinhaConta(){
         this.#minhaConta.click();
     }
+
+    acessarPaginaDeProdutos(){
+        cy.visit('produtos');
+    };
 }
 
 module.exports = new HomePage();

@@ -4,7 +4,8 @@
   "description": "Exercicio do módulo 22",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "test": "npx cypress open",
+    "test:report": "npx cypress run --reporter mochawesome --reporter-options reportDir=\"cypress/results\",overwrite=false,html=false,json=true && mochawesome-merge \"cypress/results/*.json\" > mochawesome.json && npx marge mochawesome.json"
   },
   "keywords": [],
   "author": "Pâmela Inacio Almeida",
@@ -18,6 +19,9 @@
     "nonGlobalStepDefinitions": true
   },
   "devDependencies": {
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
   }
 }
