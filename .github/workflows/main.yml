@@ -2,7 +2,7 @@ name: EBAC Modulo 22 CI
 
 on:  
   push:
-    branches: [ master]
+    branches: [ exercicios/modulo-4 ]
   workflow_dispatch:
 
 jobs:
