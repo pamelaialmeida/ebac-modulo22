@@ -3,8 +3,8 @@
     "baseUrl": "http://lojaebac.ebaconline.art.br",
     "reporter": "mochawesome",
     "reporterOptions": {
-        "reportDir": "cypress/results",
-        "overwrite": false,
+        "reportDir": "mochawesome-report",
+        "overwrite": true,
         "reportFilename": "index.html",
         "html": true,
         "json": false
