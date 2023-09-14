@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-09-14T20:22:54.628Z",
+    "end": "2023-09-14T20:23:17.397Z",
+    "duration": 22769,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "09d1319b-bcb5-421d-a2de-07bd99788b84",
+      "title": "",
+      "fullFile": "cypress/integration/Checkout.feature",
+      "file": "cypress/integration/Checkout.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d0559292-52de-400d-902d-e7b106a95623",
+          "title": "Checkout",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should create the order when all fields in checkout are filled with valid data",
+              "fullTitle": "Checkout Should create the order when all fields in checkout are filled with valid data",
+              "timedOut": null,
+              "duration": 14497,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "df111940-971b-4bda-a6c8-7f4f4e28f124",
+              "parentUUID": "d0559292-52de-400d-902d-e7b106a95623",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should not create the order when the mandatory fields in checkout are not filled",
+              "fullTitle": "Checkout Should not create the order when the mandatory fields in checkout are not filled",
+              "timedOut": null,
+              "duration": 8145,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "5ec6010f-79f6-4ad4-ac79-33eb5c317d55",
+              "parentUUID": "d0559292-52de-400d-902d-e7b106a95623",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "df111940-971b-4bda-a6c8-7f4f4e28f124",
+            "5ec6010f-79f6-4ad4-ac79-33eb5c317d55"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22642,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "index.html",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "reportFilename": "index.html",
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
