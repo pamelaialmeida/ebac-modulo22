@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-24T19:08:29.594Z",
+    "end": "2023-08-24T19:08:58.592Z",
+    "duration": 28998,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ef5c9202-e508-4ce7-9bbe-c451f0052aa6",
+      "title": "",
+      "fullFile": "cypress/integration/Carrinho.feature",
+      "file": "cypress/integration/Carrinho.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e47e2066-1fba-48c1-b317-76111c8d8b51",
+          "title": "Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should update the cart when changing the quantity of the product added to the cart",
+              "fullTitle": "Cart Should update the cart when changing the quantity of the product added to the cart",
+              "timedOut": null,
+              "duration": 17439,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "2b3abbc3-406b-4625-b5db-4ce96c2023a6",
+              "parentUUID": "e47e2066-1fba-48c1-b317-76111c8d8b51",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should remove the item from the cart",
+              "fullTitle": "Cart Should remove the item from the cart",
+              "timedOut": null,
+              "duration": 11304,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "deba5f97-db6a-43fd-bb25-a67818e19bc0",
+              "parentUUID": "e47e2066-1fba-48c1-b317-76111c8d8b51",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2b3abbc3-406b-4625-b5db-4ce96c2023a6",
+            "deba5f97-db6a-43fd-bb25-a67818e19bc0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 28743,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
