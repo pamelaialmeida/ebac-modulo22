@@ -20,7 +20,6 @@ jobs:
         with:
           install-command: npm install
           browser: chrome
-          command: npm run test:report
 
       - name: Publicando o relatorio
         uses: peaceiris/actions-gh-pages@v3
